@@ -1,0 +1,7 @@
+{
+  "name": "Crypto Whale: Market Wars",
+  "description": "A strategic card-based battle game where you manage a crypto portfolio, survive market events, and outplay the whales.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

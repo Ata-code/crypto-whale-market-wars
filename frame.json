@@ -1,0 +1,9 @@
+
+{
+  "version": "next",
+  "name": "Crypto Whale: Market Wars",
+  "iconUrl": "https://img.icons8.com/color/512/ethereum.png",
+  "splashImageUrl": "https://img.icons8.com/fluency/512/cryptocurrency.png",
+  "splashBackgroundColor": "#020617",
+  "homeUrl": "/"
+}

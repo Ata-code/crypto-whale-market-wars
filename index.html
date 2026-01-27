@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Whale: Market Wars</title>
+  
+  <!-- Farcaster Frame v2 Meta Tags -->
+  <meta property="fc:frame" content='{"version":"next","imageUrl":"https://img.icons8.com/fluency/512/cryptocurrency.png","button":{"title":"Play Whale Wars","action":{"type":"launch_frame","name":"Crypto Whale Wars","url":"/","splashImageUrl":"https://img.icons8.com/fluency/512/cryptocurrency.png","splashBackgroundColor":"#020617"}}}' />
+  <meta property="og:title" content="Crypto Whale: Market Wars" />
+  <meta property="og:description" content="A strategic card-based battle game where you manage a crypto portfolio and outplay the whales." />
+  <meta property="og:image" content="https://img.icons8.com/fluency/512/cryptocurrency.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .crypto-glow {
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+    }
+    .card-transition {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 4s infinite;
+    }
+    /* Mobile optimization for Frame viewport */
+    @media (max-width: 640px) {
+      .game-container { padding: 0.5rem; }
+      .stat-bar { width: 120px !important; }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "@farcaster/frame-sdk": "https://esm.sh/@farcaster/frame-sdk@^0.0.17"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
